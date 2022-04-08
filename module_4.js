@@ -27,17 +27,34 @@
 // }
 
 
-function registerGuest(name, callback) {
-    console.log(`Реєструємо гостя ${name}.`);
-    callback(name);
+// function registerGuest(name, callback) {
+//     console.log(`Реєструємо гостя ${name}.`);
+//     callback(name);
+// }
+
+// // Передаємо інлайн функцію greet у якості колбека
+// registerGuest("Манго", function greet(name) {
+//     console.log(`Ласкаво просимо ${name}.`);
+// });
+
+// // Передаємо інлайн функцію notify у якості колбека
+// registerGuest("Полі", function notify(name) {
+//     console.log(`Шановний(а) ${name}, ваш номер буде готовий за 30 хвилин.`);
+// });
+
+
+// Доповни другий виклик функції makePizza(pizzaName, callback), передавши другим аргументом інлайн колбек - функцію eatPizza(pizzaName), яка логує рядок "Eating pizza <назва піци>".?
+
+function makePizza(pizzaName, callback) {
+    console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+    callback(pizzaName);
 }
 
-// Передаємо інлайн функцію greet у якості колбека
-registerGuest("Манго", function greet(name) {
-    console.log(`Ласкаво просимо ${name}.`);
+makePizza("Royal Grand", function deliverPizza(pizzaName) {
+    console.log(`Delivering pizza ${pizzaName}.`);
 });
+// Change code below this line
 
-// Передаємо інлайн функцію notify у якості колбека
-registerGuest("Полі", function notify(name) {
-    console.log(`Шановний(а) ${name}, ваш номер буде готовий за 30 хвилин.`);
+makePizza("Ultracheese", function eatPizza(pizzaName) {
+    console.log(`Eating pizza ${pizzaName}`);
 });
