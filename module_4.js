@@ -45,16 +45,46 @@
 
 // Доповни другий виклик функції makePizza(pizzaName, callback), передавши другим аргументом інлайн колбек - функцію eatPizza(pizzaName), яка логує рядок "Eating pizza <назва піци>".?
 
-function makePizza(pizzaName, callback) {
-    console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
-    callback(pizzaName);
+// function makePizza(pizzaName, callback) {
+//     console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//     callback(pizzaName);
+// }
+
+// makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//     console.log(`Delivering pizza ${pizzaName}.`);
+// });
+// // Change code below this line
+
+// makePizza("Ultracheese", function eatPizza(pizzaName) {
+//     console.log(`Eating pizza ${pizzaName}`);
+// });
+
+function processCall(recipient, onAvailable, onNotAvailable) {
+    // Імітуємо доступність абонента випадковим числом
+    const isRecipientAvailable = Math.random() > 0.5;
+
+    if (!isRecipientAvailable) {
+        onNotAvailable(recipient);
+        return;
+    }
+
+    onAvailable(recipient);
 }
 
-makePizza("Royal Grand", function deliverPizza(pizzaName) {
-    console.log(`Delivering pizza ${pizzaName}.`);
-});
-// Change code below this line
+function takeCall(name) {
+    console.log(`З'єднуємо з ${name}, очікуйте...`);
+    // Логіка прийняття дзвінка
+}
 
-makePizza("Ultracheese", function eatPizza(pizzaName) {
-    console.log(`Eating pizza ${pizzaName}`);
-});
+function activateAnsweringMachine(name) {
+    console.log(`Абонент ${name} недоступний, залиште повідомлення.`);
+    // Логіка активації автовідповідача
+}
+
+function leaveHoloMessage(name) {
+    console.log(`Абонент ${name} недоступний, записуємо голограму.`);
+    // Логіка запису голограми
+}
+
+processCall("Манго", takeCall, activateAnsweringMachine);
+processCall("Полі", takeCall, leaveHoloMessage);
