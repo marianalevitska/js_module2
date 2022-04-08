@@ -198,3 +198,17 @@
 //     // Change code above this line
 // }
 
+// Виконай рефакторинг функції calculateTotalPrice(orderedItems), замінивши її оголошення на стрілочну функцію.Заміни колбек - функцію, передану в метод forEach(), на стрілочну функцію.
+
+// // Change code below this line
+// const calculateTotalPrice = (orderedItems) => {
+//     let totalPrice = 0;
+
+//     orderedItems.forEach((item) => {
+//         totalPrice += item;
+//     });
+
+//     return totalPrice;
+// };
+// // Change code above this line
+
