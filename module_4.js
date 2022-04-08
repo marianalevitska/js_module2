@@ -97,31 +97,78 @@
 // Якщо у властивості pizzas присутня піца з назвою з параметра pizzaName, метод order повинен повертати результат виклику колбека onSuccess, передаючи йому аргументом назву замовленої піци.
 // Після оголошення об'єкта pizzaPalace ми додали колбеки і виклики методів. Будь ласка, нічого там не міняй.
 
-const pizzaPalace = {
-    pizzas: ["Ultracheese", "Smoked", "Four meats"],
-    order(pizzaName, onSuccess, onError) {
+// const pizzaPalace = {
+//     pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//     order(pizzaName, onSuccess, onError) {
 
-        if (this.pizzas.includes(pizzaName)) {
-            return onSuccess(pizzaName);
-        }
-        return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
-    },
-};
+//         if (this.pizzas.includes(pizzaName)) {
+//             return onSuccess(pizzaName);
+//         }
+//         return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
+//     },
+// };
 
-// Change code above this line
+// // Change code above this line
 
-// Callback for onSuccess
-function makePizza(pizzaName) {
-    return `Your order is accepted. Cooking pizza ${pizzaName}.`;
-}
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//     return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
 
-// Callback for onError
-function onOrderError(error) {
-    return `Error! ${error}`;
-}
+// // Callback for onError
+// function onOrderError(error) {
+//     return `Error! ${error}`;
+// }
 
-// Method calls with callbacks
-pizzaPalace.order("Smoked", makePizza, onOrderError);
-pizzaPalace.order("Four meats", makePizza, onOrderError);
-pizzaPalace.order("Big Mike", makePizza, onOrderError);
-pizzaPalace.order("Vienna", makePizza, onOrderError);
+// // Method calls with callbacks
+// pizzaPalace.order("Smoked", makePizza, onOrderError);
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+// Функція calculateTotalPrice(orderedItems) приймає один параметр orderedItems - масив чисел, і розраховує загальну суму його елементів, яка зберігається у змінній totalPrice і повертається як результат роботи функції.
+
+// Виконай рефакторинг функції таким чином, щоб замість циклу for, вона використовувала метод forEach.
+
+
+
+// function calculateTotalPrice(orderedItems) {
+//     let totalPrice = 0;
+//     // Change code below this line
+
+//     // for (let i = 0; i < orderedItems.length; i += 1) {
+//     //   totalPrice += orderedItems[i];
+//     // }
+//     orderedItems.forEach(function (orderedItem) {
+//         totalPrice += orderedItem;
+//     });
+//     // Change code above this line
+//     return totalPrice;
+// }
+
+// calculateTotalPrice([12, 85, 37, 4]);
+
+
+
+// Функція filterArray(numbers, value) приймає масив чисел numbers і повертає новий масив, в якому будуть тільки ті елементи оригінального масиву, які більші за значення параметра value.
+
+// Виконай рефакторинг функції таким чином, щоб замість циклу for, вона використовувала метод forEach.
+
+// function filterArray(numbers, value) {
+//     const filteredNumbers = [];
+//     // Change code below this line
+
+//     // for (let i = 0; i < numbers.length; i += 1) {
+//     //   if (numbers[i] > value) {
+//     //     filteredNumbers.push(numbers[i]);
+//     //   }
+//     // }
+//     numbers.forEach(function (number) {
+//         if (number > value) {
+//             filteredNumbers.push(number);
+//         }
+//     })
+
+//     // Change code above this line
+//     return filteredNumbers;
+// }
