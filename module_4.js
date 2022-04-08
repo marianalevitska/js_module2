@@ -59,32 +59,69 @@
 //     console.log(`Eating pizza ${pizzaName}`);
 // });
 
-function processCall(recipient, onAvailable, onNotAvailable) {
-    // Імітуємо доступність абонента випадковим числом
-    const isRecipientAvailable = Math.random() > 0.5;
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//     // Імітуємо доступність абонента випадковим числом
+//     const isRecipientAvailable = Math.random() > 0.5;
 
-    if (!isRecipientAvailable) {
-        onNotAvailable(recipient);
-        return;
-    }
+//     if (!isRecipientAvailable) {
+//         onNotAvailable(recipient);
+//         return;
+//     }
 
-    onAvailable(recipient);
+//     onAvailable(recipient);
+// }
+
+// function takeCall(name) {
+//     console.log(`З'єднуємо з ${name}, очікуйте...`);
+//     // Логіка прийняття дзвінка
+// }
+
+// function activateAnsweringMachine(name) {
+//     console.log(`Абонент ${name} недоступний, залиште повідомлення.`);
+//     // Логіка активації автовідповідача
+// }
+
+// function leaveHoloMessage(name) {
+//     console.log(`Абонент ${name} недоступний, записуємо голограму.`);
+//     // Логіка запису голограми
+// }
+
+// processCall("Манго", takeCall, activateAnsweringMachine);
+// processCall("Полі", takeCall, leaveHoloMessage);
+
+
+
+// Необхідно написати логіку обробки замовлення піци.Виконай рефакторинг методу order таким чином, щоб він приймав другим і третім параметром два колбеки onSuccess і onError.
+
+// Якщо у властивості pizzas відсутня піца з назвою з параметра pizzaName, метод order повинен повертати результат виклику колбека onError, передаючи йому аргументом рядок "There is no pizza with a name <имя пиццы> in the assortment."
+// Якщо у властивості pizzas присутня піца з назвою з параметра pizzaName, метод order повинен повертати результат виклику колбека onSuccess, передаючи йому аргументом назву замовленої піци.
+// Після оголошення об'єкта pizzaPalace ми додали колбеки і виклики методів. Будь ласка, нічого там не міняй.
+
+const pizzaPalace = {
+    pizzas: ["Ultracheese", "Smoked", "Four meats"],
+    order(pizzaName, onSuccess, onError) {
+
+        if (this.pizzas.includes(pizzaName)) {
+            return onSuccess(pizzaName);
+        }
+        return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
+    },
+};
+
+// Change code above this line
+
+// Callback for onSuccess
+function makePizza(pizzaName) {
+    return `Your order is accepted. Cooking pizza ${pizzaName}.`;
 }
 
-function takeCall(name) {
-    console.log(`З'єднуємо з ${name}, очікуйте...`);
-    // Логіка прийняття дзвінка
+// Callback for onError
+function onOrderError(error) {
+    return `Error! ${error}`;
 }
 
-function activateAnsweringMachine(name) {
-    console.log(`Абонент ${name} недоступний, залиште повідомлення.`);
-    // Логіка активації автовідповідача
-}
-
-function leaveHoloMessage(name) {
-    console.log(`Абонент ${name} недоступний, записуємо голограму.`);
-    // Логіка запису голограми
-}
-
-processCall("Манго", takeCall, activateAnsweringMachine);
-processCall("Полі", takeCall, leaveHoloMessage);
+// Method calls with callbacks
+pizzaPalace.order("Smoked", makePizza, onOrderError);
+pizzaPalace.order("Four meats", makePizza, onOrderError);
+pizzaPalace.order("Big Mike", makePizza, onOrderError);
+pizzaPalace.order("Vienna", makePizza, onOrderError);
