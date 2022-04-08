@@ -172,3 +172,29 @@
 //     // Change code above this line
 //     return filteredNumbers;
 // }
+
+
+// Функція getCommonElements(firstArray, secondArray) приймає два масиви довільної довжини в параметри firstArray і secondArray, і повертає новий масив їхніх спільних елементів, тобто тих, які присутні в обох масивах.
+
+// Виконай рефакторинг функції таким чином, щоб замість циклу for, вона використовувала метод forEach.
+
+// function getCommonElements(firstArray, secondArray) {
+//     const commonElements = [];
+//     // Change code below this line
+
+//     // for (let i = 0; i < firstArray.length; i += 1) {
+//     //   if (secondArray.includes(firstArray[i])) {
+//     //     commonElements.push(firstArray[i]);
+//     //   }
+//     // }
+
+//     firstArray.forEach(function (first) {
+//         if (secondArray.includes(first)) {
+//             commonElements.push(first);
+//         }
+//     })
+
+//     return commonElements;
+//     // Change code above this line
+// }
+
