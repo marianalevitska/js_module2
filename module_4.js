@@ -467,3 +467,13 @@
 //     return users.filter(user => user.friends.includes(friendName));
 // };
 // // Change code above this line
+
+
+// Доповни функцію getFriends(users) таким чином, щоб вона повертала масив друзів всіх користувачів(властивість friends).У декількох користувачів можуть бути однакові друзі, зроби так, щоб масив, що повертається, не містив повторень.
+// // Change code below this line
+// const getFriends = (users) => {
+//     let allFriends = users.flatMap(user => user.friends);
+//     return allFriends.filter((item, index, allFriends) => allFriends.indexOf(item) === index);
+
+// };
+// // Change code above this line
