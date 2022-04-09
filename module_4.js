@@ -460,3 +460,10 @@
 //     }
 // ], "green"));
 
+// Доповни функцію getUsersWithFriend(users, friendName) таким чином, щоб вона повертала масив користувачів, у яких є один з ім'ям в параметрі friendName. Масив друзів користувача зберігається у властивості friends.
+
+// // Change code below this line
+// const getUsersWithFriend = (users, friendName) => {
+//     return users.filter(user => user.friends.includes(friendName));
+// };
+// // Change code above this line
