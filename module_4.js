@@ -317,3 +317,13 @@
 //     },
 // ]));
 
+// Доповни код таким чином, щоб у змінній evenNumbers утворився масив парних чисел з масиву numbers, а в змінній oddNumbers - масив непарних.Обов'язково використовуй метод filter().
+
+const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// Change code below this line
+
+const evenNumbers = numbers.filter(number => number % 2 === 0);
+const oddNumbers = numbers.filter(number => number % 2 === 1);
+
+console.log(evenNumbers);
+console.log(oddNumbers);
