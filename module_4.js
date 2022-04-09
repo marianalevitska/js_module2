@@ -319,11 +319,38 @@
 
 // Доповни код таким чином, щоб у змінній evenNumbers утворився масив парних чисел з масиву numbers, а в змінній oddNumbers - масив непарних.Обов'язково використовуй метод filter().
 
-const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
-// Change code below this line
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// // Change code below this line
 
-const evenNumbers = numbers.filter(number => number % 2 === 0);
-const oddNumbers = numbers.filter(number => number % 2 === 1);
+// const evenNumbers = numbers.filter(number => number % 2 === 0);
+// const oddNumbers = numbers.filter(number => number % 2 === 1);
 
-console.log(evenNumbers);
-console.log(oddNumbers);
+// console.log(evenNumbers);
+// console.log(oddNumbers);
+
+// Доповни код таким чином, щоб у змінній allGenres був масив всіх жанрів книг(властивість genres) з масиву books, а у змінній uniqueGenres - масив унікальних жанрів, без повторень.
+
+// const books = [
+//     {
+//         title: "The Last Kingdom",
+//         author: "Bernard Cornwell",
+//         genres: ["adventure", "history"],
+//     },
+//     {
+//         title: "Beside Still Waters",
+//         author: "Robert Sheckley",
+//         genres: ["fiction", "mysticism"],
+//     },
+//     {
+//         title: "Redder Than Blood",
+//         author: "Tanith Lee",
+//         genres: ["horror", "mysticism", "adventure"],
+//     },
+// ];
+// // Change code below this line
+// const allGenres = books.flatMap(book => book.genres);
+// const uniqueGenres = allGenres.filter((genre, index, allGenres) => allGenres.indexOf(genre) === index
+// );
+// console.log(allGenres);
+// console.log(uniqueGenres);
+
