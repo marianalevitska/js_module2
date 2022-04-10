@@ -531,3 +531,24 @@
 // }, 0);
 
 // console.log(total); // 32
+
+// Під час роботи з масивом об'єктів виконується редукування за значенням певної властивості. Наприклад, у нас є масив студентів з балами за тест. Необхідно отримати середній бал.
+
+
+// const students = [
+//     { name: "Манго", score: 83 },
+//     { name: "Полі", score: 59 },
+//     { name: "Аякс", score: 37 },
+//     { name: "Ківі", score: 94 },
+//     { name: "Х'юстон", score: 64 },
+// ];
+
+// // Назва акумулятора може бути довільною, це просто параметр функції
+// const totalScore = students.reduce((total, student) => {
+//     return total + student.score;
+// }, 0);
+
+// const averageScore = totalScore / students.length;
+// console.log(totalScore);
+// console.log(averageScore);
+
