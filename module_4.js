@@ -796,3 +796,11 @@
 // };
 // // Change code above this line
 
+
+// Доповни функцію sortByName(users) таким чином, щоб вона повертала масив користувачів, відсортований за їх ім'ям (властивість name) в алфавітному порядку.
+
+// // Change code below this line
+// const sortByName = users => {
+//     return [...users].sort((firstUser, secondUser) => firstUser.name.localeCompare(secondUser.name));
+// };
+// // Change code above this line
