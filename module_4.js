@@ -854,3 +854,13 @@
 // };
 // // Change code above this line
 
+// Доповни функцію getSortedFriends(users) таким чином, щоб вона повертала масив унікальних імен друзів(властивість friends), відсортований за алфавітом.
+
+// // Change code below this line
+// const getSortedFriends = users => {
+//     return [...users]
+//         .flatMap(user => user.friends)
+//         .filter((friend, index, users) => users.indexOf(friend) === index)
+//         .sort((a, b) => a.localeCompare(b));
+// };
+// // Change code above this line
