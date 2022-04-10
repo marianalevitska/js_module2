@@ -713,6 +713,15 @@
 // console.log(ascendingReleaseDates);
 // console.log(alphabeticalAuthors);
 
+// Онлайн бібіліотеці необхідно відображати книги, відсортовані за датою видання, за її зростанням або спаданням.Доповни код таким чином, щоб у змінній ascendingReleaseDates вийшла копія масиву releaseDates, відсортована за зростанням, а у змінній descendingReleaseDates - копія, відсортована за спаданням.
 
+const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// Change code below this line
+
+const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+console.log(ascendingReleaseDates);
+console.log(descendingReleaseDates);
 
 
