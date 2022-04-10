@@ -787,3 +787,12 @@
 //     return users.sort((firstUser, secondUser) => firstUser.balance - secondUser.balance);
 // };
 // // Change code above this line
+
+// Доповни функцію sortByDescendingFriendCount(users) таким чином, щоб вона повертала масив користувачів, відсортований за спаданням кількості їхніх друзів(властивість friends).
+
+// // Change code below this line
+// const sortByDescendingFriendCount = users => {
+//     return [...users].sort((firstUser, secondUser) => secondUser.friends.length - firstUser.friends.length);
+// };
+// // Change code above this line
+
