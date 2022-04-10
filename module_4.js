@@ -778,3 +778,12 @@
 
 // const sortedByDescentingRating = [...books].sort((firstBook, secondBook) => secondBook.rating - firstBook.rating);
 
+
+
+// Доповни функцію sortByAscendingBalance(users) таким чином, щоб вона повертала масив користувачів, відсортований за зростанням їх балансу(властивість balance).
+
+// // Change code below this line
+// const sortByAscendingBalance = users => {
+//     return users.sort((firstUser, secondUser) => firstUser.balance - secondUser.balance);
+// };
+// // Change code above this line
