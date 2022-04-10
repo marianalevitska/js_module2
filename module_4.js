@@ -864,3 +864,16 @@
 //         .sort((a, b) => a.localeCompare(b));
 // };
 // // Change code above this line
+
+
+// Доповни функцію getTotalBalanceByGender(users, gender) таким чином, щоб вона повертала загальний баланс користувачів(властивість balance), стать яких(властивість gender) збігається зі значенням параметра gender.
+// // Change code below this line
+// const getTotalBalanceByGender = (users, gender) => {
+//     return [...users]
+//         .filter(user => user.gender === gender)
+//         .reduce((total, money) => {
+//             return total + money.balance;
+//         }, 0);
+// };
+// // Change code above this line
+
