@@ -663,3 +663,13 @@
 //     }
 // ]));
 
+// Доповни функцію getTotalFriendCount(users) таким чином, щоб вона рахувала і повертала загальну кількість друзів (властивість friends) усіх користувачів з масиву users.
+
+// // Change code below this line
+// const getTotalFriendCount = users => {
+//     return users.reduce((total, person) => {
+//         return total + person.friends.length;
+//     }, 0);
+// };
+// // Change code above this line
+
