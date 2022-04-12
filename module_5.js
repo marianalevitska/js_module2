@@ -181,3 +181,15 @@
 // const mercedes = new Car("mercedes", "amg gt 63s", "100k$");
 // console.log(mercedes);
 
+// Виконай рефакторинг класу Car таким чином, щоб він приймав один параметр - об'єкт з властивостями brand, model і price. Деструктуризуй об'єкт в сигнатурі(підписі) конструктора.
+// {} - дужки!!!!!
+// class Car {
+//     // Change code below this line
+//     constructor({ brand, model, price }) {
+//         this.brand = brand;
+//         this.model = model;
+//         this.price = price;
+//     }
+//     // Change code above this line
+// }
+
