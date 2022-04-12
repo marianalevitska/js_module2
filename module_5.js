@@ -160,3 +160,24 @@
 
 // }
 
+// Додай класу Car метод constructor, який приймає три параметри:
+
+// brand - марка автомобіля.
+//     model - модель автомобіля.
+//         price - ціна автомобіля.
+// Клас Car повинен створювати об'єкт з однойменними властивостями brand, model і price, значеннями яких повинні бути передані аргументи під час його виклику з оператором new.
+
+// class Car {
+//     // Change code below this line
+//     constructor(brand, model, price) {
+//         this.brand = brand;
+//         this.model = model;
+//         this.price = price;
+//     }
+
+
+//     // Change code above this line
+// }
+// const mercedes = new Car("mercedes", "amg gt 63s", "100k$");
+// console.log(mercedes);
+
