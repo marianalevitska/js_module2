@@ -153,3 +153,10 @@
 // console.log(ancestor.isPrototypeOf(parent));
 // console.log(child);
 // console.log(parent.isPrototypeOf(child));
+
+
+// Використовуючи ключове слово class, оголоси клас Car з порожнім тілом.
+// class Car {
+
+// }
+
