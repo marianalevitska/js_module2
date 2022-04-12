@@ -110,19 +110,46 @@
 
 // Зміни код таким чином, щоб об'єкт parent став прототипом для об'єкта у змінній сhild.
 
-const parent = {
-    name: "Stacey",
-    surname: "Moore",
-    age: 54,
-    heritage: "Irish",
-};
-// Change code below this line
+// const parent = {
+//     name: "Stacey",
+//     surname: "Moore",
+//     age: 54,
+//     heritage: "Irish",
+// };
+// // Change code below this line
 
-const child = Object.create(parent);
+// const child = Object.create(parent);
 
-// Change code above this line
-child.name = "Jason";
-child.age = 27;
+// // Change code above this line
+// child.name = "Jason";
+// child.age = 27;
 
-console.log(child);
-console.log(parent.isPrototypeOf(child));
+// console.log(child);
+// console.log(parent.isPrototypeOf(child));
+
+
+// Зміни код, побудувавши ланцюжок прототипів таким чином, щоб об'єкт ancestor був прототипом для parent, а той, своєю чергою, був прототипом для child.
+
+// const ancestor = {
+//     name: "Paul",
+//     age: 83,
+//     surname: "Dawson",
+//     heritage: "Irish",
+// };
+// // Change code below this line
+
+// const parent = Object.create(ancestor);
+// parent.name = "Stacey";
+// parent.surname = "Moore";
+// parent.age = 54;
+
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
+
+// // Change code above this line
+
+// console.log(parent);
+// console.log(ancestor.isPrototypeOf(parent));
+// console.log(child);
+// console.log(parent.isPrototypeOf(child));
