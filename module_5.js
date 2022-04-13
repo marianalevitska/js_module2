@@ -351,3 +351,84 @@
 // storage.removeItem("Prolonger");
 // console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
 
+
+
+// Виконай рефакторинг класу StringBuilder, зробивши властивість value приватною.
+
+// Під коментарем ми додали ініціалізацію екземпляра і виклики методів у тій послідовності, в якій твій код перевірятимуть тести.Будь ласка, нічого там не змінюй.
+// class StringBuilder {
+//     // Change code below this line
+//     #value;
+//     constructor(initialValue) {
+//         this.#value = initialValue;
+//     }
+
+//     getValue() {
+//         return this.#value;
+//     }
+
+//     padEnd(str) {
+//         this.#value += str;
+//     }
+
+//     padStart(str) {
+//         this.#value = str + this.#value;
+//     }
+
+//     padBoth(str) {
+//         this.padStart(str);
+//         this.padEnd(str);
+//     }
+// }
+
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+
+
+// Виконай рефакторинг класу Car.Зроби властивості model і price приватними, а також #brand.Стандартизуй публічний інтерфейс класу, замінивши вже оголошені методи на гетери та сетери brand, model і price, для взаємодії з приватними властивостями.
+
+// class Car {
+//     // Change code below this line
+//     #brand;
+//     #model;
+//     #price;
+//     constructor({ brand, model, price }) {
+//         this.#brand = brand;
+//         this.#model = model;
+//         this.#price = price;
+//     }
+
+//     get brand() {
+//         return this.#brand;
+//     }
+
+//     set brand(newBrand) {
+//         this.#brand = newBrand;
+//     }
+
+//     get model() {
+//         return this.#model;
+//     }
+
+//     set model(newModel) {
+//         this.#model = newModel;
+//     }
+
+//     get price() {
+//         return this.#price;
+//     }
+
+//     set price(newPrice) {
+//         this.#price = newPrice;
+//     }
+//     // Change code above this line
+// }
+
+
